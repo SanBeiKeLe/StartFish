@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?><!--康复中心详情页（橙红色。版本12）-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_therapistcenter_primate_heightpicture"
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/color_i" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="10dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="182dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toTopOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:srcCompat="@mipmap/back" />
+
+    <ImageView
+        android:id="@+id/iv_write"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="175dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:layout_constraintEnd_toEndOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/back_bg" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="199dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/color_o"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintCircleRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_therapistcenter_primate_heightpicture"
+        tools:ignore="MissingConstraints">
+        <!--添加cardvie里面的布局  todo  no.xml-->
+        <ScrollView
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/no"/>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="175dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:layout_constraintStart_toStartOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_bg" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="10dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="182dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toTopOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:srcCompat="@mipmap/back" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_write"
+        app:layout_constraintStart_toStartOf="@+id/iv_write"
+        app:layout_constraintTop_toTopOf="@+id/iv_write"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="49dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15"
+        app:srcCompat="@mipmap/toask_bg" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="14dp"
+        android:text="我要预约咨询"
+        android:textColor="#ffffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

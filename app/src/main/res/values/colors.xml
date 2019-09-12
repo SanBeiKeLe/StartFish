@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#866DDA</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="textColorPrimary">#616161</color>
+    <color name="Blue_Grey">#607d8b</color>
+    <color name="split_line_1">#BBBBBC</color>
+
+
+
+    <color name="color_i">#84dfea</color>
+    <color name="color_j">#a5a5a5</color>
+    <color name="color_k">#eeeeee</color>
+    <color name="color_o">#E1691D</color>
+
+    <color name="color_w">#FFFFFF</color>
+        <color name="color_b">#fff6f6f6</color><!--灰色-->
+
+
+</resources>

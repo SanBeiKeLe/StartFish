@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--康复中心详情页  广场微贴的列表（Rlv）-->
+    <!--分为两种
+        1.有图：最多显示三张（有321个位置显示隐藏）
+        2.没图：加载rlv_therapistcenter_proguarweitietwo.xml   layout(无图页面)
+        -->
+
+    <ImageView
+        android:id="@+id/iv_therapister_picture"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/picture_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_therpisters_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:text="陈艳萍"
+        android:textColor="#ff666666"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_therapister_picture"
+        app:layout_constraintTop_toTopOf="@+id/iv_therapister_picture" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_o"
+        tools:ignore="MissingConstraints">
+
+        <!--<ImageView
+            android:id="@+id/iv_startOne"
+            android:layout_width="14dp"
+            android:layout_height="13dp" />-->
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_therapister_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="分秒康复机构 首席认证康复师"
+        android:textColor="#ff999999"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_therapister_picture"
+        app:layout_constraintStart_toStartOf="@+id/tv_therpisters_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_therpisters_name" />
+    <!--底图使用的是固定图 todo 修改-->
+    <Button
+        android:id="@+id/btn_atcuted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:text="+关注"
+        android:textColor="#fff94c28"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_therpisters_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_therapistcenter_therapistknowledge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="17dp"
+        android:ellipsize="end"
+        android:lineHeight="28dp"
+        android:maxLines="3"
+        android:text="骨平台骨折后锻炼有三个重点：1恢复关节功能角度，膝盖恩能够甚至能弯曲到90度以内2、关节活动锻炼（灵活性）。3、肌肉力量对暗恋，近期应以恢复..."
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_therapister_price" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="21dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_therapistcenter_therapistknowledge"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:text="23568"
+        android:textColor="#ff666666"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/iv_zannum"
+        android:layout_width="13dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView20"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="15626"
+        android:textColor="#ff666666"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_zannum"
+        app:layout_constraintStart_toEndOf="@+id/iv_zannum"
+        app:layout_constraintTop_toTopOf="@+id/iv_zannum"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="16dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_zannum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_zannum"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp"
+        android:text="542"
+        android:textColor="#ff666666"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="15dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_therapister_price"
+        app:layout_constraintStart_toStartOf="@+id/iv_therapister_picture"
+        app:layout_constraintTop_toTopOf="@+id/iv_therapister_picture"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

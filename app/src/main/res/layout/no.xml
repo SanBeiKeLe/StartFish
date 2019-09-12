@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_start_five"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv-start_three"
+            app:layout_constraintStart_toEndOf="@+id/tv_zhiyexuke"
+            app:layout_constraintTop_toTopOf="@+id/iv-start_three"
+            app:srcCompat="@color/color_o"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_therapist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="170dp"
+            android:text="北京分秒跳动康复中心"
+            android:textColor="#ff000000"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="311dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_therapist_name"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="8dp"
+            android:text="123"
+            android:textColor="#ff000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/tv_therapist_name" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="56dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:src="@color/color_o"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="368"
+            android:textColor="#ff020000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="53dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="32dp"
+            android:text="12323"
+            android:textColor="#ff000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="13dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="119dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_therapist_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/list_dingwei" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="北京市东城区体育路甲23号大厦3层"
+            android:textColor="#ff333333"
+            android:textSize="13sp"
+            app:layout_constraintTop_toTopOf="@id/imageView11"
+            app:layout_constraintBottom_toBottomOf="@id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            tools:layout_editor_absoluteY="120dp" />
+
+        <TextView
+
+            android:id="@+id/textView8"
+            android:layout_width="1dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="0dp"
+
+            android:background="#ff666666"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_juli"
+            app:layout_constraintEnd_toStartOf="@+id/tv_juli"
+            app:layout_constraintStart_toEndOf="@+id/tv_address"
+            app:layout_constraintTop_toTopOf="@+id/tv_juli"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_juli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center_vertical"
+            android:text="距您2.3KM"
+            android:textColor="#ff333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_address"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/tv_address" />
+
+        <ImageView
+            android:id="@+id/iv_goto_map"
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_juli"
+            app:layout_constraintStart_toEndOf="@+id/tv_juli"
+            app:layout_constraintTop_toTopOf="@+id/tv_juli"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/iv-start_three"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="147dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/tv_zhiyexuke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="执业许可"
+            android:textColor="#ff333333"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv-start_three"
+            app:layout_constraintStart_toEndOf="@+id/iv-start_three"
+            app:layout_constraintTop_toTopOf="@+id/iv-start_three" />
+
+        <ImageView
+            android:id="@+id/iv_start_four"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv-start_three"
+            app:layout_constraintStart_toEndOf="@+id/tv_zhiyexuke"
+            app:layout_constraintTop_toTopOf="@+id/iv-start_three"
+            app:srcCompat="@color/color_o"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_sheshixaingqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="设施详情"
+            android:textColor="#ff333333"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_start_four"
+            app:layout_constraintStart_toEndOf="@+id/iv_start_four"
+            app:layout_constraintTop_toTopOf="@+id/iv_start_four" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_start_four"
+            app:layout_constraintStart_toEndOf="@+id/tv_sheshixaingqing"
+            app:layout_constraintTop_toTopOf="@+id/iv_start_four"
+            app:srcCompat="@color/color_o"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_primissbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="荣誉证书"
+            android:textColor="#ff333333"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_sheshixaingqing"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/tv_sheshixaingqing" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="192dp"
+            android:layout_marginEnd="1dp"
+            android:background="#CCCCCC "
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="221dp"
+            android:text="康复师团队"
+            android:textColor="#ff000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv-all_therapistsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="177dp"
+            android:layout_marginTop="221dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="3dp"
+            android:text="共10名康复师"
+            android:textColor="#ff666666"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_goto_therapisterslistface"
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv-all_therapistsers"
+            app:layout_constraintStart_toEndOf="@+id/tv-all_therapistsers"
+            app:layout_constraintTop_toTopOf="@+id/tv-all_therapistsers"
+            app:srcCompat="@android:color/holo_orange_dark"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="72dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:srcCompat="@color/color_o" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="首席康复师"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintEnd_toEndOf="@+id/imageView19"
+            app:layout_constraintStart_toStartOf="@id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/imageView19"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/therapisterteam_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="21dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="1dp"
+            android:background="#F4F4F4 "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/therapisterteam_rlv" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="问诊评价"
+            android:textColor="#ff000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/tv_all_thinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="213dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="2dp"
+            android:text="共5条评价"
+            android:textColor="#ff666666"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+        <ImageView
+            android:id="@+id/iv_goto_lwenzhentalkaboutface"
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_all_thinks"
+            app:layout_constraintStart_toEndOf="@+id/tv_all_thinks"
+            app:layout_constraintTop_toTopOf="@+id/tv_all_thinks"
+            tools:ignore="MissingConstraints"
+            tools:srcCompat="@color/colorPrimary" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wenzhen_talkabout_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="广场微贴"
+            android:textColor="#ff000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/wenzhen_talkabout_rlv" />
+
+        <TextView
+            android:id="@+id/tv_all_weitie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="共123条微贴"
+            android:textColor="#ff666666"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+        <ImageView
+            android:id="@+id/iv_goto_proguardweitface"
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_all_weitie"
+            app:layout_constraintStart_toEndOf="@+id/tv_all_weitie"
+            app:layout_constraintTop_toTopOf="@+id/tv_all_weitie"
+            app:srcCompat="@color/colorPrimary" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/proguardweitie_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

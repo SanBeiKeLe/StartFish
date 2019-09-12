@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_therapists_huoyuezhinum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--康复培训机构的列表展示-->
+
+    <ImageView
+        android:id="@+id/iv_therapists_picture"
+        android:layout_width="153dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="14dp"
+        app:srcCompat="@color/color_o"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_therapists_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:maxWidth="145dp"
+        android:maxHeight="34dp"
+        android:maxLines="2"
+        android:text="北京分秒国际跳动康复中心（三里屯店）"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_therapist_place"
+        app:layout_constraintStart_toEndOf="@+id/iv_therapists_picture"
+        app:layout_constraintTop_toTopOf="@+id/iv_therapists_picture"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_dingwei"
+        android:layout_width="10dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="185dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_therapists_picture"
+        app:layout_constraintTop_toBottomOf="@+id/tv_therapists_name"
+        app:srcCompat="@mipmap/list_dingwei" />
+
+    <TextView
+        android:id="@+id/tv_therapist_place"
+        android:layout_width="145dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="2"
+        android:text="北京市东城区体育路甲23号大厦3层"
+
+        android:textColor="#ff666666"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_dingwei"
+        app:layout_constraintTop_toBottomOf="@+id/tv_therapists_name" />
+
+    <TextView
+        android:id="@+id/tv_therpisters_zixunnum"
+        android:layout_width="55dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="咨询量 543"
+        android:textColor="#ffffffff"
+        android:textSize="9sp"
+        android:gravity="center"
+        android:background="@drawable/therqpistercouter_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_therapists_picture"
+        app:layout_constraintEnd_toEndOf="@+id/iv_therapists_picture"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="@+id/iv_therapists_picture"
+        app:layout_constraintTop_toTopOf="@+id/iv_therapists_picture"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

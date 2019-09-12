@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".therapists.TherapistsActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_bgtop_therapists"
+        android:layout_width="375dp"
+        android:layout_height="308dp"
+        android:background="@color/color_o"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_therapistcenter_primate_heightpicture"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="338dp"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_dingwei"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_research"
+        app:layout_constraintStart_toStartOf="@+id/iv_therapistcenter_primate_heightpicture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <ImageView
+        android:id="@+id/iv_research"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bgtop_therapists"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card"
+        android:layout_width="375dp"
+        android:layout_height="522dp"
+        android:layout_marginTop="249dp"
+        android:background="@color/color_w"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bgtop_therapists"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="58dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="4dp"
+                android:text="智能排序"
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_xiala_more"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/iv_xiala_more"
+                android:layout_width="9dp"
+                android:layout_height="6dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="292dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/colorAccent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="19dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:ignore="MissingConstraints">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/iv_huo"
+        android:layout_width="18dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bgtop_therapists"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bgtop_therapists"
+        app:srcCompat="@color/color_b" />
+
+    <TextView
+        android:id="@+id/tv_institutio_name"
+        android:layout_width="148dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="184dp"
+        android:text="机构名字"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_huo"
+        app:layout_constraintTop_toTopOf="@+id/iv_bgtop_therapists" />
+
+    <TextView
+        android:id="@+id/tv_institutio_address"
+        android:layout_width="184dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="227dp"
+        android:layout_marginEnd="148dp"
+        android:text="北京市东城区体育路甲23号大厦3层"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_institutio_name"
+        app:layout_constraintTop_toTopOf="@+id/iv_bgtop_therapists" />
+
+    <TextView
+        android:id="@+id/tv_consultNum"
+        android:layout_width="47dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="17dp"
+        android:text="咨询量546"
+        android:textColor="#ffffffff"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bgtop_therapists"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_bgtop_therapists" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
